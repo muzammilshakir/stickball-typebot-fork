@@ -72,7 +72,7 @@ export const DashboardHeader = () => {
             onClick={onOpen}
             isLoading={isNotDefined(workspace)}
           >
-            Settings & Members
+            Settings
           </Button>
           <Menu placement="bottom-end">
             <MenuButton as={Button} variant="outline" px="2">

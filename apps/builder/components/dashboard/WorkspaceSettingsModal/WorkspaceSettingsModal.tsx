@@ -115,7 +115,7 @@ export const WorkspaceSettingsModal = ({
                   Settings
                 </Button>
               )}
-              <Button
+              {/* <Button
                 variant={selectedTab === 'members' ? 'solid' : 'ghost'}
                 onClick={() => setSelectedTab('members')}
                 leftIcon={<UsersIcon />}
@@ -124,8 +124,8 @@ export const WorkspaceSettingsModal = ({
                 pl="4"
               >
                 Members
-              </Button>
-              {canEdit && (
+              </Button> */}
+              {/* {canEdit && (
                 <Button
                   variant={selectedTab === 'billing' ? 'solid' : 'ghost'}
                   onClick={() => setSelectedTab('billing')}
@@ -136,7 +136,7 @@ export const WorkspaceSettingsModal = ({
                 >
                   Billing
                 </Button>
-              )}
+              )} */}
             </Stack>
           </Stack>
 
