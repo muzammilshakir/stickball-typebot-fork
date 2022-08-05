@@ -125,7 +125,7 @@ export const TemplatesModal = ({ isOpen, onClose, onTypebotChoose }: Props) => {
 
             <Stack>
               <Divider />
-              <Tooltip label="Coming soon!" placement="top">
+              {/* <Tooltip label="Coming soon!" placement="top">
                 <span>
                   <Button
                     w="full"
@@ -136,7 +136,7 @@ export const TemplatesModal = ({ isOpen, onClose, onTypebotChoose }: Props) => {
                     Community templates
                   </Button>
                 </span>
-              </Tooltip>
+              </Tooltip> */}
             </Stack>
           </Stack>
         </ModalBody>

@@ -15,22 +15,22 @@ export const templates: TemplateProps[] = [
     emoji: '🖼️',
     fileName: 'digital-product-payment.json',
   },
-  {
-    name: 'FAQ',
-    emoji: '💬',
-    fileName: 'customer-support.json',
-    isComingSoon: true,
-  },
-  {
-    name: 'Conversational Resume',
-    emoji: '👨‍💼',
-    fileName: 'customer-support.json',
-    isComingSoon: true,
-  },
-  {
-    name: 'User Onboarding',
-    emoji: '🧑‍🚀',
-    fileName: 'customer-support.json',
-    isComingSoon: true,
-  },
+  // {
+  //   name: 'FAQ',
+  //   emoji: '💬',
+  //   fileName: 'customer-support.json',
+  //   isComingSoon: true,
+  // },
+  // {
+  //   name: 'Conversational Resume',
+  //   emoji: '👨‍💼',
+  //   fileName: 'customer-support.json',
+  //   isComingSoon: true,
+  // },
+  // {
+  //   name: 'User Onboarding',
+  //   emoji: '🧑‍🚀',
+  //   fileName: 'customer-support.json',
+  //   isComingSoon: true,
+  // },
 ]
