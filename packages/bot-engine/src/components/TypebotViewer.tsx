@@ -41,7 +41,7 @@ export type TypebotViewerProps = {
 
 export const TypebotViewer = ({
   typebot,
-  apiHost = env('VIEWER_URL')?.split(',')[0],
+  apiHost = process.env.NEXT_PUBLIC_VIEWER_URL?.split(',')[0],
   isPreview = false,
   isLoading = false,
   style,

@@ -15,7 +15,7 @@ export const IframeEmbedCode = ({
   const { typebot } = useTypebot()
   const src = `${
     isEmpty(env('VIEWER_INTERNAL_URL'))
-      ? env('VIEWER_URL')
+      ? process.env.NEXT_PUBLIC_VIEWER_URL
       : env('VIEWER_INTERNAL_URL')
   }/${typebot?.publicId}`
   const code = `<iframe src="${src}" width="${widthLabel}" height="${heightLabel}" />`

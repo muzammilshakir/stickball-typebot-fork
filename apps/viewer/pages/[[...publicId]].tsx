@@ -16,7 +16,7 @@ export const getServerSideProps: GetServerSideProps = async (
   const { host, forwardedHost } = getHost(context.req)
   try {
     if (!host) return { props: {} }
-    const viewerUrls = (env('VIEWER_URL') ?? '').split(',')
+    const viewerUrls = (process.env.NEXT_PUBLIC_VIEWER_URL ?? '').split(',')
     const isMatchingViewerUrl =
       env('E2E_TEST') === 'enabled'
         ? true

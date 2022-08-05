@@ -56,7 +56,7 @@ export const WordpressModal = ({
                   type={'text'}
                   defaultValue={`${
                     isEmpty(env('VIEWER_INTERNAL_URL'))
-                      ? env('VIEWER_URL')
+                      ? process.env.NEXT_PUBLIC_VIEWER_URL
                       : env('VIEWER_INTERNAL_URL')
                   }/${publicId}`}
                 />
@@ -64,7 +64,7 @@ export const WordpressModal = ({
                   <CopyButton
                     textToCopy={`${
                       isEmpty(env('VIEWER_INTERNAL_URL'))
-                        ? env('VIEWER_URL')
+                        ? process.env.NEXT_PUBLIC_VIEWER_URL
                         : env('VIEWER_INTERNAL_URL')
                     }/${publicId}`}
                   />
