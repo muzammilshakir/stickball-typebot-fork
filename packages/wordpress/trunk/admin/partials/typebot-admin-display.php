@@ -40,7 +40,7 @@
 </script>
 <div class="box" style="padding: 3rem; margin-top: 1rem; margin-right: 1rem; max-width: 800px">
   <h1 class="title">Typebot Settings</h1>
-  <a style="text-decoration: underline" href="https://app.typebot.io/typebots" target="_blank">First, you need to create a Typebot with our builder. It's free.</a>
+  <a style="text-decoration: underline" href="https://app.typebot.io/typebots" target="_blank">First, you need to Create a Stickbot with our builder. It's free.</a>
   <form method="post" action="options.php" style="margin-top: 1rem">
     <?php
     settings_fields('typebot');
