@@ -116,7 +116,7 @@ export const GettingStartedModal = () => {
             </List>
           </Stack>
 
-          <Text>
+          {/* <Text>
             Feel free to use the bottom-right bubble to reach out if you have
             any question. I usually answer within the next 24 hours. 😃
           </Text>
@@ -164,7 +164,7 @@ export const GettingStartedModal = () => {
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
-          </Stack>
+          </Stack> */}
         </ModalBody>
       </ModalContent>
     </Modal>
