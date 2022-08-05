@@ -17,20 +17,20 @@ export const CreateFolderButton = ({ isLoading, onClick }: Props) => {
     onClick()
   }
   return (
-    <Button
-      leftIcon={<FolderPlusIcon />}
-      onClick={handleClick}
-      isLoading={isLoading}
-    >
-      <HStack>
-        {/* <Text>Create a folder</Text>
-        {isFreePlan(workspace) && <Tag colorScheme="orange">Pro</Tag>} */}
-      </HStack>
-      <UpgradeModal
-        isOpen={isOpen}
-        onClose={onClose}
-        type={LimitReached.FOLDER}
-      />
-    </Button>
+    // <Button
+    //   leftIcon={<FolderPlusIcon />}
+    //   onClick={handleClick}
+    //   isLoading={isLoading}
+    // >
+    //   <HStack>
+    //     {/* <Text>Create a folder</Text>
+    //     {isFreePlan(workspace) && <Tag colorScheme="orange">Pro</Tag>} */}
+    //   </HStack>
+    //   <UpgradeModal
+    //     isOpen={isOpen}
+    //     onClose={onClose}
+    //     type={LimitReached.FOLDER}
+    //   />
+    // </Button>
   )
 }
