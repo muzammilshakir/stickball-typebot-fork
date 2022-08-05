@@ -23,8 +23,8 @@ export const CreateFolderButton = ({ isLoading, onClick }: Props) => {
       isLoading={isLoading}
     >
       <HStack>
-        <Text>Create a folder</Text>
-        {isFreePlan(workspace) && <Tag colorScheme="orange">Pro</Tag>}
+        {/* <Text>Create a folder</Text>
+        {isFreePlan(workspace) && <Tag colorScheme="orange">Pro</Tag>} */}
       </HStack>
       <UpgradeModal
         isOpen={isOpen}
