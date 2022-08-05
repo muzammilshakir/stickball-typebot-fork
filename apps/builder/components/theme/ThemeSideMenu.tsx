@@ -78,7 +78,7 @@ export const ThemeSideMenu = () => {
             )}
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem>
+        {/* <AccordionItem>
           <AccordionButton py={6}>
             <HStack flex="1" pl={2}>
               <CodeIcon />
@@ -94,7 +94,7 @@ export const ThemeSideMenu = () => {
               />
             )}
           </AccordionPanel>
-        </AccordionItem>
+        </AccordionItem> */}
       </Accordion>
     </Stack>
   )
