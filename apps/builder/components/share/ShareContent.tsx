@@ -64,7 +64,7 @@ export const ShareContent = () => {
               onPathnameChange={handlePublicIdChange}
             />
           )}
-          {typebot?.customDomain && (
+          {/* {typebot?.customDomain && (
             <HStack>
               <EditableUrl
                 hostname={'https://' + typebot.customDomain.split('/')[0]}
@@ -92,10 +92,10 @@ export const ShareContent = () => {
                 />
               )}
             </>
-          )}
+          )} */}
         </Stack>
 
-        <Stack spacing={4}>
+        {/* <Stack spacing={4}>
           <Heading fontSize="2xl" as="h1">
             Embed your typebot
           </Heading>
@@ -108,7 +108,7 @@ export const ShareContent = () => {
               />
             ))}
           </Wrap>
-        </Stack>
+        </Stack> */}
       </Stack>
     </Flex>
   )
