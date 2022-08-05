@@ -387,7 +387,7 @@ const TdWithTooltip = ({
     <Text>{text}</Text>
     <Tooltip hasArrow placement="top" label={tooltip}>
       <chakra.span cursor="pointer">
-        <HelpCircleIcon />
+        {/* <HelpCircleIcon /> */}
       </chakra.span>
     </Tooltip>
   </Td>

@@ -10,7 +10,7 @@ export const MoreInfoTooltip = ({ children }: Props) => {
   return (
     <Tooltip label={children}>
       <chakra.span cursor="pointer">
-        <HelpCircleIcon />
+        {/* <HelpCircleIcon /> */}
       </chakra.span>
     </Tooltip>
   )
