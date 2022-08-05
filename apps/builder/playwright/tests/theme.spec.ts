@@ -162,24 +162,24 @@ test.describe.parallel('Theme page', () => {
     })
   })
 
-  test.describe('Custom CSS', () => {
-    test('should reflect change in real-time', async ({ page }) => {
-      const typebotId = cuid()
-      await importTypebotInDatabase(
-        path.join(__dirname, '../fixtures/typebots/theme.json'),
-        {
-          id: typebotId,
-        }
-      )
-      await page.goto(`/typebots/${typebotId}/theme`)
-      await page.click('button:has-text("Custom CSS")')
-      await page.fill(
-        'div[role="textbox"]',
-        '.typebot-button {background-color: green}'
-      )
-      await expect(
-        typebotViewer(page).locator('[data-testid="button"]')
-      ).toHaveCSS('background-color', 'rgb(0, 128, 0)')
-    })
-  })
+  // test.describe('Custom CSS', () => {
+  //   test('should reflect change in real-time', async ({ page }) => {
+  //     const typebotId = cuid()
+  //     await importTypebotInDatabase(
+  //       path.join(__dirname, '../fixtures/typebots/theme.json'),
+  //       {
+  //         id: typebotId,
+  //       }
+  //     )
+  //     await page.goto(`/typebots/${typebotId}/theme`)
+  //     await page.click('button:has-text("Custom CSS")')
+  //     await page.fill(
+  //       'div[role="textbox"]',
+  //       '.typebot-button {background-color: green}'
+  //     )
+  //     await expect(
+  //       typebotViewer(page).locator('[data-testid="button"]')
+  //     ).toHaveCSS('background-color', 'rgb(0, 128, 0)')
+  //   })
+  // })
 })
