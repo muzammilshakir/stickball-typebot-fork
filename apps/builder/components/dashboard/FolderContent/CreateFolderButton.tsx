@@ -32,5 +32,6 @@ export const CreateFolderButton = ({ isLoading, onClick }: Props) => {
     //     type={LimitReached.FOLDER}
     //   />
     // </Button>
+    <></>
   )
 }
