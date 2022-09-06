@@ -125,7 +125,7 @@ export const TypebotViewer = ({
                 startGroupId={startGroupId}
               />
             </div>
-            {typebot.settings.general.isBrandingEnabled && <LiteBadge />}
+            {/* {typebot.settings.general.isBrandingEnabled && <LiteBadge />} */}
           </div>
         </AnswersContext>
       </TypebotContext>
