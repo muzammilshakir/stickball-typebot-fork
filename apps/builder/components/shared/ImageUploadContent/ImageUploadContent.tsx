@@ -183,10 +183,10 @@ const EmojiContent = ({
 }
 
 const GiphyContent = ({ onNewUrl }: ContentProps) => {
-  if (isEmpty(env('GIPHY_API_KEY')))
+  if (isEmpty(process.env.NEXT_PUBLIC_GIPHY_API_KEY))
     return <Text>NEXT_PUBLIC_GIPHY_API_KEY is missing in environment</Text>
   return (
-    <SearchContextManager apiKey={env('GIPHY_API_KEY') as string}>
+    <SearchContextManager apiKey={process.env.NEXT_PUBLIC_GIPHY_API_KEY as string}>
       <GiphySearch onSubmit={onNewUrl} />
     </SearchContextManager>
   )
