@@ -43,19 +43,19 @@ export const PublishButton = (props: ButtonProps) => {
     .some((b) => b.type === InputBlockType.FILE)
 
   const handlePublishClick = () => {
-    if (isFreePlan(workspace) && hasInputFile) return onOpen()
+    // if (isFreePlan(workspace) && hasInputFile) return onOpen()
     publishTypebot()
     if (!publishedTypebot) push(`/typebots/${query.typebotId}/share`)
   }
 
   return (
     <HStack spacing="1px">
-      <UpgradeModal
+      {/* <UpgradeModal
         plan={Plan.PRO}
         isOpen={isOpen}
         onClose={onClose}
         type={LimitReached.FILE_INPUT}
-      />
+      /> */}
       <Tooltip
         borderRadius="md"
         hasArrow
