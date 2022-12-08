@@ -14,7 +14,9 @@ export const templates: TemplateProps[] = [
     name: 'Digital Product Payment',
     emoji: '🖼️',
     fileName: 'digital-product-payment.json',
-  },
+  },{
+    name: 'ID Stick Bot', emoji: '🆔', fileName: 'id-stick-bot.json'
+  }
   // {
   //   name: 'FAQ',
   //   emoji: '💬',
