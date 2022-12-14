@@ -1,0 +1,219 @@
+{
+    "id": "clbf17gxh188208jgi98c3cw8",
+    "createdAt": "2022-12-08T12:04:32.501Z",
+    "updatedAt": "2022-12-08T12:29:51.369Z",
+    "icon":"🆔",
+    "name": "ID-Type-Bot",
+    "publishedTypebotId": "clbf1jq6m002h2v6gkfeb18f9",
+    "folderId": null,
+    "groups": [
+      {
+        "id": "clbf17gxf000008jgbt9hcb8p",
+        "title": "Start",
+        "blocks": [
+          {
+            "id": "clbf17gxf000108jg95fjgcsu",
+            "type": "start",
+            "label": "Start",
+            "groupId": "clbf17gxf000008jgbt9hcb8p",
+            "outgoingEdgeId": "clbf1dif600282v6g2af3a40q"
+          }
+        ],
+        "graphCoordinates": { "x": 29, "y": -23 }
+      },
+      {
+        "id": "clbf17q1h001t2v6gzfctfw4j",
+        "title": "UserId Check",
+        "blocks": [
+          {
+            "id": "clbf17q1x001u2v6gu8mfh9ot",
+            "type": "Condition",
+            "items": [
+              {
+                "id": "clbf17q1x001v2v6ggfad3ob3",
+                "type": 1,
+                "blockId": "clbf17q1x001u2v6gu8mfh9ot",
+                "content": {
+                  "comparisons": [
+                    {
+                      "id": "clbf1882v00202v6gjuegvtuo",
+                      "variableId": "vclbf1a32k00222v6gyvj6kz7u",
+                      "comparisonOperator": "Is set"
+                    }
+                  ],
+                  "logicalOperator": "AND"
+                },
+                "outgoingEdgeId": "clbf1e5ao00292v6gu637sv92"
+              }
+            ],
+            "groupId": "clbf17q1h001t2v6gzfctfw4j",
+            "outgoingEdgeId": "clbf1uxo4000b2v6gjvoklmqk"
+          }
+        ],
+        "graphCoordinates": { "x": 38, "y": 190 }
+      },
+      {
+        "id": "clbf1cep400262v6gwm2zja7f",
+        "title": "Greet User",
+        "blocks": [
+          {
+            "id": "clbf1ceqh00272v6goq6fx59w",
+            "type": "text",
+            "content": {
+              "html": "<div>Hello, {{userId}}</div>",
+              "richText": [
+                { "type": "p", "children": [{ "text": "Hello, {{userId}}" }] }
+              ],
+              "plainText": "Hello, {{userId}}"
+            },
+            "groupId": "clbf1cep400262v6gwm2zja7f",
+            "outgoingEdgeId": "clbf1ff6b002f2v6gsur34uek"
+          }
+        ],
+        "graphCoordinates": { "x": 438, "y": 294 }
+      },
+      {
+        "id": "clbf1f5i6002d2v6ga0awhtjl",
+        "title": "Start editing from here",
+        "blocks": [
+          {
+            "id": "clbf1f5i6002e2v6gb49p3qd6",
+            "type": "text",
+            "content": {
+              "html": "<div>Start from here... </div>",
+              "richText": [
+                { "type": "p", "children": [{ "text": "Start from here... " }] }
+              ],
+              "plainText": "Start from here... "
+            },
+            "groupId": "clbf1f5i6002d2v6ga0awhtjl"
+          },
+          {
+            "id": "clbf1z3ag00002v6gdwqnkm7k",
+            "type": "text input",
+            "groupId": "clbf1f5i6002d2v6ga0awhtjl",
+            "options": {
+              "isLong": false,
+              "labels": { "button": "Send", "placeholder": "Type your answer..." }
+            }
+          },
+          {
+            "id": "clbf1z7e500012v6gt36p1et0",
+            "type": "text",
+            "content": {
+              "html": "<div>Bye</div>",
+              "richText": [{ "type": "p", "children": [{ "text": "Bye" }] }],
+              "plainText": "Bye"
+            },
+            "groupId": "clbf1f5i6002d2v6ga0awhtjl"
+          }
+        ],
+        "graphCoordinates": { "x": 786, "y": 293 }
+      },
+      {
+        "id": "clbf1sfbx00082v6gcrlxfj60",
+        "title": "UserId Not Found",
+        "blocks": [
+          {
+            "id": "clbf1sfcd00092v6gsqarqe43",
+            "type": "Set variable",
+            "groupId": "clbf1sfbx00082v6gcrlxfj60",
+            "options": {
+              "variableId": "vclbf1a32k00222v6gyvj6kz7u",
+              "expressionToEvaluate": "UnknownUser"
+            },
+            "outgoingEdgeId": "clbf1uajf000a2v6gdo7ymnle"
+          }
+        ],
+        "graphCoordinates": { "x": 46, "y": 482 }
+      }
+    ],
+    "variables": [{ "id": "vclbf1a32k00222v6gyvj6kz7u", "name": "userId" }],
+    "edges": [
+      {
+        "id": "clbf1dif600282v6g2af3a40q",
+        "to": { "groupId": "clbf17q1h001t2v6gzfctfw4j" },
+        "from": {
+          "blockId": "clbf17gxf000108jg95fjgcsu",
+          "groupId": "clbf17gxf000008jgbt9hcb8p"
+        }
+      },
+      {
+        "id": "clbf1e5ao00292v6gu637sv92",
+        "to": { "groupId": "clbf1cep400262v6gwm2zja7f" },
+        "from": {
+          "itemId": "clbf17q1x001v2v6ggfad3ob3",
+          "blockId": "clbf17q1x001u2v6gu8mfh9ot",
+          "groupId": "clbf17q1h001t2v6gzfctfw4j"
+        }
+      },
+      {
+        "id": "clbf1ff6b002f2v6gsur34uek",
+        "to": { "groupId": "clbf1f5i6002d2v6ga0awhtjl" },
+        "from": {
+          "blockId": "clbf1ceqh00272v6goq6fx59w",
+          "groupId": "clbf1cep400262v6gwm2zja7f"
+        }
+      },
+      {
+        "id": "clbf1uajf000a2v6gdo7ymnle",
+        "to": { "groupId": "clbf1cep400262v6gwm2zja7f" },
+        "from": {
+          "blockId": "clbf1sfcd00092v6gsqarqe43",
+          "groupId": "clbf1sfbx00082v6gcrlxfj60"
+        }
+      },
+      {
+        "id": "clbf1uxo4000b2v6gjvoklmqk",
+        "to": { "groupId": "clbf1sfbx00082v6gcrlxfj60" },
+        "from": {
+          "blockId": "clbf17q1x001u2v6gu8mfh9ot",
+          "groupId": "clbf17q1h001t2v6gzfctfw4j"
+        }
+      }
+    ],
+    "theme": {
+      "chat": {
+        "inputs": {
+          "color": "#303235",
+          "backgroundColor": "#FFFFFF",
+          "placeholderColor": "#9095A0"
+        },
+        "buttons": { "color": "#FFFFFF", "backgroundColor": "#0042DA" },
+        "hostAvatar": {
+          "url": "https://avatars.githubusercontent.com/u/47139132?v=4",
+          "isEnabled": true
+        },
+        "hostBubbles": { "color": "#303235", "backgroundColor": "#F7F8FF" },
+        "guestBubbles": { "color": "#FFFFFF", "backgroundColor": "#FF8E21" }
+      },
+      "general": { "font": "Open Sans", "background": { "type": "None" } }
+    },
+    "settings": {
+      "general": {
+        "isBrandingEnabled": true,
+        "isInputPrefillEnabled": true,
+        "isHideQueryParamsEnabled": true,
+        "isNewResultOnRefreshEnabled": false
+      },
+      "metadata": {
+        "description": "Build beautiful conversational forms and embed them directly in your applications without a line of code. Triple your response rate and collect answers that has more value compared to a traditional form."
+      },
+      "typingEmulation": { "speed": 300, "enabled": true, "maxDelay": 1.5 }
+    },
+    "publicId": "my-typebot-98c3cw8",
+    "customDomain": null,
+    "workspaceId": "clbddcgww001009mvubtdr9cq",
+    "resultsTablePreferences": {
+      "columnsOrder": [
+        "select",
+        "clbf1z3ag00002v6gdwqnkm7k",
+        "date",
+        "vclbf1a32k00222v6gyvj6kz7u",
+        "logs"
+      ],
+      "columnsWidth": {},
+      "columnsVisibility": {}
+    }
+  }
+  
