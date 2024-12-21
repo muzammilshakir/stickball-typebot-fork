@@ -12,7 +12,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     const resultId = req.query.resultId as string
     const result = await prisma.result.update({
       where: { id: resultId },
-      data: { ...data, studentId: 'someIdHere' },
+      // data: { ...data, studentId: 'someIdHere' },
+      data: { ...data},
     })
     return res.send(result)
   }
