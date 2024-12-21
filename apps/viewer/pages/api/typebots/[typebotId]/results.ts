@@ -25,12 +25,12 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   }
   if (req.method === 'POST') {
     const typebotId = req.query.typebotId as string
-    const studentId = 'SomeIdHere'
+    const studentId = 'SomeIdHere' 
     const result = await prisma.result.create({
       data: {
         typebotId,
         isCompleted: false,
-        studentId: studentId
+        // studentId: studentId
       },
     })
     return res.send(result)
